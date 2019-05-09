@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>DaftUp - rekrutacja</title>
 </head>
 <body>
-    
+    <main class="main">
+        <input type="text" id="myInput" placeholder="Enter searching word...">
+        <button type="submit" class="submit" id="myBtn" onclick="myFunction()">Search</button>
+        <table id="myTable">
+            <tr><td>Walmart</td></tr>
+            <tr><td>State Grid </td></tr>
+            <tr><td>Sinopec Group</td></tr>
+            <tr><td>China National Petroleum</td></tr>
+            <tr><td>Royal Dutch Shell</td> </td></tr>
+            <tr><td>Toyota Motor</td></tr>
+            <tr><td>Volkswagen</td></tr>
+            <tr><td>BP </td></tr>
+            <tr><td>Exxon Mobil</td></tr>
+            <tr><td>Berkshire Hathaway</td></tr>
+        </table>
+    </main>
+    <script>
+        function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+var input = document.getElementById("myInput");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("myBtn").click();
+  }
+});
+
+    </script>
 </body>
 </html>
