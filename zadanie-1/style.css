@@ -18,7 +18,7 @@
     background-color: #6C757D;
 }
 
-.content__article {
+.main__article {
     background-color: #343A40;
 }
 
@@ -50,6 +50,6 @@
 
 @media (min-width: 1200px) {
     .main__content {
-        grid-template: repeat(2, 1fr) / repeat(3, 1fr); 
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
 }

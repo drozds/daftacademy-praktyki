@@ -24,7 +24,7 @@ input {
 
 tr {
     border: 1px solid #000;
-    
+
 }
 
 td {
@@ -47,7 +47,6 @@ table {
     border-radius: 5px;
     color: #fff;
     transition: ease .2s;
-    
     font-size: 1rem;
 }
 
@@ -56,7 +55,9 @@ table {
 }
 
 @media (min-width: 900px) {
-    input, table {
+
+    input,
+    table {
         width: 40%;
     }
 

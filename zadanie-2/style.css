@@ -23,7 +23,7 @@ main {
     top: 0;
     left: 0;
     z-index: 10;
-    
+
 }
 
 .modal__content {
@@ -70,5 +70,3 @@ main {
     background-color: #b9936c;
     color: white;
 }
-
-
