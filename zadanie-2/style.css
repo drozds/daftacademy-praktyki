@@ -43,7 +43,7 @@ main {
     font-size: 20px;
     color: #3e4444;
     transition: all ease .2s;
-    
+    border: 1px solid #3e4444;
 }
 
 .modal__content a:hover {
@@ -53,9 +53,6 @@ main {
 .modal__content a:active {
     color: #3e4444
 }
-
-
-
 
 .button {
     background-color: #c4b7a6;

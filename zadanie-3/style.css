@@ -5,6 +5,9 @@
     outline: none;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
 .main {
     width: 100%;
@@ -44,9 +47,20 @@ table {
     border-radius: 5px;
     color: #fff;
     transition: ease .2s;
+    
+    font-size: 1rem;
 }
 
 .submit:hover {
     opacity: .8;
 }
 
+@media (min-width: 900px) {
+    input, table {
+        width: 40%;
+    }
+
+    .submit {
+        width: 20%;
+    }
+}
