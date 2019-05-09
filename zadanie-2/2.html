@@ -10,32 +10,27 @@
 </head>
 
 <body>
-    <main class="main">
-        <button class="button modal--open">Open modal</button>
-    </main>
-    <section class="modal">
-        <div class="modal__content">
-            <button class="button modal--close">
-                Close modal
-            </button>
-            <a href="../zadanie-3/3.html" target="_blank">Open 3rd task</a>
-        </div>
 
-    </section>
+    <button class="button">Open modal</button>
+
+    <div class="bg-modal bg-modal--close">
+        <section class="modal">
+            <nav class="modal__nav">
+                <a href="../zadanie-3/3.html" class="modal__link">
+                    Go to 3rd task
+                </a>
+            </nav>
+            <button class="button">Close modal</button>
+        </section>
+    </div>
 
     <script>
-        const modal = document.querySelector('.modal');
-        const openButton = document.querySelector('.modal--open');
-        const closeButton = document.querySelector('.modal--close');
-
-        openButton.addEventListener('click', () => {
-            modal.style.display = "flex";
-        });
-
-        closeButton.addEventListener('click', () => {
-            modal.style.display = "none";
-        });
+        const buttons = document.querySelectorAll('.button');
+        for (const button of buttons)
+            button.addEventListener('click', () => 
+            document.querySelector('.bg-modal').classList.toggle('bg-modal--close'));
     </script>
+
 </body>
 
 </html>
