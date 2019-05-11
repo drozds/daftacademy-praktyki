@@ -15,8 +15,8 @@ section {
     padding-top: 3rem;
 }
 
-.bg-modal {
-    background-color: rgba(218, 194, 146, .8);
+.wrapper-modal {
+    background-color: rgba(218, 194, 146, 0.5);
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -28,7 +28,8 @@ section {
 }
 
 .modal {
-    border: 2px solid #e6e2d3;
+    border: 2px solid #f8f6ec;
+    background-color:rgba(218, 194, 146, .25) ;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
@@ -57,7 +58,7 @@ section {
     color: white;
 }
 
-.bg-modal--closed {
+.wrapper-modal--closed {
     display: none;
 }
 

@@ -13,7 +13,7 @@
 
     <button class="button">Open modal</button>
 
-    <div class="bg-modal bg-modal--closed">
+    <div class="wrapper-modal wrapper-modal--closed">
         <section class="modal">
             <nav class="modal__nav">
                 <a href="../zadanie-3/3.html" class="modal__link">
@@ -28,7 +28,7 @@
         const buttons = document.getElementsByClassName('button');
         for (const button of buttons) {
             button.addEventListener('click', () =>
-            document.querySelector('.bg-modal').classList.toggle('bg-modal--closed'));
+            document.querySelector('.wrapper-modal').classList.toggle('wrapper-modal--closed'));
         }
     </script>
 
