@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>1st task</title>
+    <title>2nd task</title>
 </head>
 
 <body>
 
     <button class="button">Open modal</button>
 
-    <div class="bg-modal bg-modal--close">
+    <div class="bg-modal bg-modal--closed">
         <section class="modal">
             <nav class="modal__nav">
                 <a href="../zadanie-3/3.html" class="modal__link">
@@ -25,10 +25,11 @@
     </div>
 
     <script>
-        const buttons = document.querySelectorAll('.button');
-        for (const button of buttons)
-            button.addEventListener('click', () => 
-            document.querySelector('.bg-modal').classList.toggle('bg-modal--close'));
+        const buttons = document.getElementsByClassName('button');
+        for (const button of buttons) {
+            button.addEventListener('click', () =>
+            document.querySelector('.bg-modal').classList.toggle('bg-modal--closed'));
+        }
     </script>
 
 </body>

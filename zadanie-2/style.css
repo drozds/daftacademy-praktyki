@@ -53,11 +53,11 @@ section {
 }
 
 .button:hover {
-    background-color: #b9936c;
+    opacity: .9;
     color: white;
 }
 
-.bg-modal--close {
+.bg-modal--closed {
     display: none;
 }
 
@@ -71,48 +71,48 @@ section {
     position: relative;
     display: inline-block;
     padding: 0 20px;
-	height: 45px;
-	line-height: 45px;
+    height: 45px;
+    line-height: 45px;
 }
 
 .modal__link::before,
 .modal__link::after {
-	position: absolute;
-	width: 45px;
-	height: 2px;
-	background: #b9936c;
-	content: '';
-	opacity: 0.4;
-	transition: all 0.3s;
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background: #b9936c;
+    content: '';
+    opacity: 0.4;
+    transition: all 0.3s;
 }
 
 .modal__link::before {
-	top: 0;
-	left: 0;
-	transform: rotate(90deg);
-	transform-origin: 0 0;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
 }
 
 .modal__link::after {
-	right: 0;
-	bottom: 0;
-	transform: rotate(90deg);
-	transform-origin: 100% 0;
-} 
+    right: 0;
+    bottom: 0;
+    transform: rotate(90deg);
+    transform-origin: 100% 0;
+}
 
 .modal__link:focus::before,
 .modal__link:focus::after {
-	opacity: 1;
+    opacity: 1;
 }
 
 .modal__link:hover::before,
 .modal__link:focus::before {
-	left: 50%;
-	transform: rotate(0deg) translateX(-50%);
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
 }
 
 .modal__link:hover::after,
 .modal__link:focus::after {
-	right: 50%;
-	transform: rotate(0deg) translateX(50%);
+    right: 50%;
+    transform: rotate(0deg) translateX(50%);
 }

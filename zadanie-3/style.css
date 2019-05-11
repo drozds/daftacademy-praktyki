@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family:  'Arial' ,sans-serif;
 }
 
 .main {
@@ -14,17 +14,24 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 2rem;
 }
 
-input {
+.header__search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.header__input {
     padding: 0.5rem 0.4rem;
     width: 70%;
-}
-
-tr {
-    border: 1px solid #000;
-
 }
 
 td {
@@ -32,36 +39,43 @@ td {
     padding: 0.5rem 1rem;
 }
 
-table {
+.main__table {
     width: 70%;
     border: 1px solid #000;
     border-collapse: collapse;
 }
 
-.submit {
-    margin-top: 15px;
+.header__button {
     width: 40%;
-    padding: 0.5rem;
+    padding: 0.52rem;
     background-color: tomato;
     border: 0;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     color: #fff;
     transition: ease .2s;
     font-size: 1rem;
+    cursor: pointer;
 }
 
-.submit:hover {
+.header__button:hover {
     opacity: .8;
 }
 
 @media (min-width: 900px) {
 
-    input,
-    table {
+    .main__table {
         width: 40%;
     }
 
-    .submit {
-        width: 20%;
+    .header__input {
+        width: 30%;
+    }
+
+    .header__button {
+        width: 10%;
+    }
+
+    .header__search-form {
+        width: 100%;
     }
 }
